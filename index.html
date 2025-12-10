@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НьюСкоуп - Инновационные решения</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка с навигацией и видео -->
+    <header class="header">
+        <div class="video-background">
+            <video autoplay muted loop playsinline id="header-video">
+                <source src="/videos/159021-818026286.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">НьюСкоуп</a>
+                
+                <!-- Мобильное меню -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Десктопное меню -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Главная</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#services" class="nav-link dropdown-toggle">
+                            Услуги <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#services">Веб-разработка</a></li>
+                            <li><a href="#services">Мобильные приложения</a></li>
+                            <li><a href="#services">Консалтинг</a></li>
+                            <li><a href="#services">Поддержка</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="header-content">
+            <h1 class="header-title">Инновационные технологические решения</h1>
+            <p class="header-subtitle">Мы создаем будущее, сочетая креативность с передовыми технологиями для достижения выдающихся результатов</p>
+            <a href="#contact" class="header-btn">Начать проект</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Секция о нас -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">О нашей компании</h2>
+                <p class="section-description">Мы команда профессионалов, специализирующаяся на создании инновационных digital-решений для бизнеса любого масштаба. Наш опыт позволяет нам реализовывать проекты любой сложности.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="feature-title">Быстрый запуск</h3>
+                        <p class="feature-text">Оптимизированные процессы разработки позволяют нам быстро выводить продукты на рынок.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Адаптивный дизайн</h3>
+                        <p class="feature-text">Все наши решения отлично работают на любых устройствах и экранах.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-title">Аналитика и рост</h3>
+                        <p class="feature-text">Мы помогаем нашим клиентам расти с помощью data-driven решений.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Секция слайдера проектов -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Наши проекты</h2>
+                <p class="section-description">Посмотрите примеры наших последних работ и достижений в различных отраслях.</p>
+                
+                <div class="slider-container">
+                    <div class="slider" id="projects-slider">
+                        <div class="slide active">
+                            <div class="slide-content">
+                                <h3>Корпоративный портал</h3>
+                                <p>Разработка комплексной системы управления для крупной производственной компании.</p>
+                                <div class="tech-tags">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="slide-image">
+                                <img src="images/image.png">
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h3>Мобильное приложение для фитнеса</h3>
+                                <p>Создание кроссплатформенного приложения с персонализированными тренировками и отслеживанием прогресса.</p>
+                                <div class="tech-tags">
+                                    <span>React Native</span>
+                                    <span>Firebase</span>
+                                    <span>Redux</span>
+                                </div>
+                            </div>
+                            <div class="slide-image">
+                                <img src="images/large.jpg">
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h3>Интернет-магазин премиум класса</h3>
+                                <p>Разработка высоконагруженной платформы электронной коммерции с интеграцией платежных систем и CRM.</p>
+                                <div class="tech-tags">
+                                    <span>Vue.js</span>
+                                    <span>Laravel</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                            <div class="slide-image">
+                                <img src="images/2hes4dottod2xuqo7sr499u310bgrof1.webp">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" id="prev-slide">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider-dots" id="slider-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                        </div>
+                        <button class="slider-btn next-btn" id="next-slide">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Секция контактов с формой -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-description">Готовы начать проект? Заполните форму ниже, и наш менеджер свяжется с вами в течение 24 часов.</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Наши контакты</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Адрес</h4>
+                                <p>г.Краснодар, ул.Северная, д.143 </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (495) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@newscope.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Часы работы</h4>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="number" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Услуга</label>
+                                <select id="service" name="service">
+                                    <option value="">Выберите услугу</option>
+                                    <option value="web">Веб-разработка</option>
+                                    <option value="mobile">Мобильные приложения</option>
+                                    <option value="consulting">Консалтинг</option>
+                                    <option value="support">Поддержка</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="agree" name="agree" required>
+                                <label for="agree">Я согласен на обработку персональных данных</label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                <span>Отправить сообщение</span>
+                                <div class="spinner hidden" id="form-spinner"></div>
+                            </button>
+                            
+                            <div class="form-message hidden" id="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">НьюСкоуп</div>
+                <p class="footer-text">Инновационные технологические решения для вашего бизнеса</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="footer-copyright">© 2025 НьюСкоуп</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
